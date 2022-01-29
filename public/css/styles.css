@@ -1,0 +1,59 @@
+body {
+  /*color: red;  to set entire page words to red*/
+  color: #333333;
+  font-family: arial;
+  max-width: 650px;
+  margin: 0-auto; /*0 bcos dw to add any space on top and bottom*/
+  /*auto adds equal space on L and R*/
+  padding: 0 16px; /*0 no additional space above and below*/
+  /*16px on L and R*/
+
+  display: flex;
+  flex-direction: column; /*default is row*/
+  min-height: 100vh;
+}
+
+footer {
+  color: #888888;
+  border-top: 1px solid #eeeeee;
+  margin-top: 16px;
+  padding: 16px 0;
+}
+
+header {
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+header a {
+  /*only targetting links inside header.hbs and not entire site*/
+  color: #888888;
+  margin-right: 16px;
+  text-decoration: none;
+}
+
+.portrait {
+  width: 250px;
+}
+
+.main-content {
+  flex-grow: 1; /*main content should take up all leftover space*/
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px; /*puts space b/w textbox text and border*/
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #888888;
+  background: #888888;
+  color: white;
+  padding: 8px;
+}
